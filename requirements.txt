@@ -1,0 +1,8 @@
+openai
+langchain
+pypdf
+tiktoken
+json
+os
+python-dotenv
+faiss-cpu

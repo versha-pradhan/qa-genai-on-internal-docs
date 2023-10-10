@@ -1,0 +1,9 @@
+{
+    "filenames": [
+        {
+            "filename": "Quality_assurance.pdf",
+            "file_type": "pdf",
+	    "location": "./data/document/"
+        }
+    ]
+}

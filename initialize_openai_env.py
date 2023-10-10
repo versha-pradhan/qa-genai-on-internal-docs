@@ -1,0 +1,25 @@
+import openai
+import os
+from dotenv import load_dotenv
+
+
+#load environment variables
+load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY") 
+OPENAI_DEPLOYMENT_ENDPOINT = os.getenv("OPENAI_DEPLOYMENT_ENDPOINT")
+OPENAI_DEPLOYMENT_NAME = os.getenv("OPENAI_DEPLOYMENT_NAME")
+OPENAI_MODEL_NAME = os.getenv("OPENAI_MODEL_NAME")
+OPENAI_DEPLOYMENT_VERSION = os.getenv("OPENAI_DEPLOYMENT_VERSION")
+OPENAI_ADA_EMBEDDING_DEPLOYMENT_NAME = os.getenv("OPENAI_ADA_EMBEDDING_DEPLOYMENT_NAME")
+OPENAI_ADA_EMBEDDING_MODEL_NAME = os.getenv("OPENAI_ADA_EMBEDDING_MODEL_NAME")
+OPENAI_API_TYPE = os.getenv("OPENAI_API_TYPE")
+DATA_SOURCE_JSON_FILE = os.getenv("DATA_SOURCE_JSON_FILE")
+VECTOR_DB_STORE_LOCATION = os.getenv("VECTOR_DB_STORE_LOCATION")
+
+def initialize():
+    #init Azure OpenAI
+    openai.api_type = OPENAI_API_TYPE
+    openai.api_version = OPENAI_DEPLOYMENT_VERSION
+    openai.api_base = OPENAI_DEPLOYMENT_ENDPOINT
+    openai.api_key = OPENAI_API_KEY

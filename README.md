@@ -32,9 +32,9 @@ Contents of the requirements.txt file:
 * faiss-cpu
 
 To install the required python packages, run the following command. If you don't have pip installed, then follow the instructions from https://pip.pypa.io/en/stable/installation/ website.
-`
+```
 pip install -r requirements.txt
-`
+```
 
 
 #### Environment Configuration:

@@ -45,32 +45,32 @@ Update the .env file with Open AI key, Azure deployment endpoint, and deployment
 
 #### Setps to run the program:
 1. Clone the git repository on your local machine
-`
+```
 git clone git@github.com:versha-pradhan/qa-genai-on-internal-docs.git
-`
+```
 
 2. cd to cloned directory 
-`
+```
 cd qa-genai-on-internal-docs
-`
+```
 
 3. Install the requirements (listed in requirements.txt file)
-`
+```
 pip install -r requirements.txt
-`
+```
 
 4. In .env file, add vaues for following variables
-`
+```
    OPENAI_DEPLOYMENT_ENDPOINT
    OPENAI_API_KEY
    OPENAI_DEPLOYMENT_NAME
    OPENAI_DEPLOYMENT_VERSION
-`
+```
 
 5. From commandline, run jupyter notebook 
-`
+```
 jupyter notebook
-`
+```
 
 6. Open "data_source_indexer.ipynb" file in jupyter notebook and run it.
    * This will generate the faiss vector index db files in `./dbs/documentation/faiss_index` directory

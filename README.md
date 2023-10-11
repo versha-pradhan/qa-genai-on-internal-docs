@@ -1,14 +1,16 @@
 #### Introduction
 This is a Generative AI app that answers questions based on the contents of https://en.wikipedia.org/wiki/Quality_assurance. The contents of this wiki page are downloaded as a pdf document and the pdf document is convertered into faiss vector using ada embedding. Following langchain modules are used for doing this:
-
-> from langchain.document_loaders import PyPDFLoader
-> from langchain.embeddings.openai import OpenAIEmbeddings
-> from langchain.vectorstores import FAISS
+'''
+from langchain.document_loaders import PyPDFLoader
+from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain.vectorstores import FAISS
+'''
 
 To build the gpt-3.5 turbo llm powered question-answer private chatbot, following langchain modules are used:
-
-> from langchain.chat_models import AzureChatOpenAI
-> :wqfrom langchain.chains.qa_with_sources import load_qa_with_sources_chain
+'''
+from langchain.chat_models import AzureChatOpenAI
+from langchain.chains.qa_with_sources import load_qa_with_sources_chain
+'''
 
 This program is written in python and needs jupyter notebook to run. Instructions to install jupyter notebook are listed below.
  
@@ -28,9 +30,9 @@ Contents of the requirements.txt file:
 * faiss-cpu
 
 To install the required python packages, run the following command. If you don't have pip installed, then follow the instructions from https://pip.pypa.io/en/stable/installation/ website.
-> pip install -r requirements.txt
-
-NOTE: that jupyter notebook is installed as part of the requirements.
+'''
+pip install -r requirements.txt
+'''
 
 
 #### Environment Configuration:
